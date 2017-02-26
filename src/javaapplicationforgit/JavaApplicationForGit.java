@@ -15,16 +15,16 @@ public class JavaApplicationForGit {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String greeting;
+        Greeting greeting;
         
         // Checking arguments
         if ( args.length > 1 ) {
-            greeting = args[1];
+            greeting = new Greeting( new LenguageSelector( args[1] ));
         } else {
-            greeting = "Hello world!";
+            greeting = new Greeting( new LenguageSelector() );
         }
         
-        System.out.println( greeting );                
+        System.out.println( greeting.Greet() );                
     }
     
 }

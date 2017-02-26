@@ -10,18 +10,22 @@ package javaapplicationforgit;
  * @author Federico
  */
 public class LenguageSelector {
-    String leng;
+    private final String leng;
 
     public LenguageSelector() {
         this( "ES" );
     }       
     
     public LenguageSelector(String leng) {
-        if ( leng == "EN" ) {
+        if ( leng.equals( "ES" ) ) {
             this.leng = leng;
         } else {
             this.leng = "ES";
         }
     }
-    
+
+    public String getLeng() {
+        return leng;
+    }
+            
 }
