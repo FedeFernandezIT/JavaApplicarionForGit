@@ -6,7 +6,7 @@
 package javaapplicationforgit;
 
 /**
- *
+ * 
  * @author Federico
  */
 public class JavaApplicationForGit {
@@ -15,8 +15,8 @@ public class JavaApplicationForGit {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println( "Hello world!" );
+        String greeting = "Hello world!";
+        System.out.println( greeting );
     }
     
 }
