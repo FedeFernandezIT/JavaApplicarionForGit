@@ -15,8 +15,16 @@ public class JavaApplicationForGit {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String greeting = "Hello world!";
-        System.out.println( greeting );
+        String greeting;
+        
+        // Checking arguments
+        if ( args.length > 1 ) {
+            greeting = args[1];
+        } else {
+            greeting = "Hello world!";
+        }
+        
+        System.out.println( greeting );                
     }
     
 }
