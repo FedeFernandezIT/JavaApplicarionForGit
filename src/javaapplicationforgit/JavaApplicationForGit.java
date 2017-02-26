@@ -18,11 +18,12 @@ public class JavaApplicationForGit {
         Greeting greeting;
         
         // Checking arguments
+        String lenguage = "ES";
         if ( args.length > 1 ) {
-            greeting = new Greeting( new LenguageSelector( args[1] ));
-        } else {
-            greeting = new Greeting( new LenguageSelector() );
+            lenguage = args[1];
         }
+        
+        greeting = new Greeting( new LenguageSelector( lenguage ));
         
         System.out.println( greeting.Greet() );                
     }
